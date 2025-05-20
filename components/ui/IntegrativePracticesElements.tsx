@@ -3,6 +3,8 @@ import { View, StyleSheet, Text } from 'react-native';
 import { Svg, Path, Circle, G } from 'react-native-svg';
 import { colors } from '@/constants/colors';
 
+
+
 type ElementProps = {
   size?: number;
   color?: string;
@@ -13,26 +15,22 @@ type ElementProps = {
 export const SUSLogo: React.FC<ElementProps> = ({ size = 40, color = colors.primary[500], style }) => {
   return (
     <View style={[styles.container, style]}>
-      <Svg width={size} height={size} viewBox="0 0 100 100">
-        <Circle cx="50" cy="50" r="45" fill="#005BAA" />
-        <Path
-          d="M30,35 C30,35 45,25 70,35 L70,45 C70,45 45,35 30,45 L30,35 Z"
-          fill="#FFFFFF"
-        />
-        <Path
-          d="M30,55 C30,55 45,45 70,55 L70,65 C70,65 45,55 30,65 L30,55 Z"
-          fill="#FFFFFF"
-        />
-        <Text
-          x="50"
-          y="80"
-          fontSize="12"
-          textAnchor="middle"
-          fill="#FFFFFF"
-          fontWeight="bold"
-        >
-          SUS
-        </Text>
+      
+      <Svg 
+          clip-rule="evenodd" 
+          fill-rule="evenodd" 
+          height="40mm" 
+          image-rendering="optimizeQuality" 
+          shape-rendering="geometricPrecision" 
+          text-rendering="geometricPrecision" 
+          viewBox="9134 7362 12588 6892" 
+          width="65mm" 
+          >
+          
+          <G fill="#005bab">
+              <Path d="M17257 7362h2176v2176h-2176zm-1939 2324h6404v2221h-2583l-2087-2107zm3864 2381 251 11 45 1617-148-1446zm-2148 199h2176c28 669 55 1334 189 1988l-2181-3c-129-608-146-1285-183-1985z"/>
+              <Path d="M14934 9754c677 83 1354 135 2030 158l2164 2244c-1398 23-2796-60-4194-249zm-4983 259h570v-268h-775c-282 0-612 291-609 612 2 281 167 594 550 655 100 16 171 29 265 65 113 44 179 160 171 262-9 118-95 234-273 234h-649v313h837c297 0 609-273 655-578 31-206-13-493-148-626-180-179-379-181-592-253-86-29-171-120-171-211 0-89 82-205 171-205zm954 1128 3-1381 629 3-3 1466c0 205 189 385 407 367 197-16 352-148 352-329l-1-1513 310-3v1350c0 519-290 717-581 806-147 45-308 39-456 14-373-62-661-401-661-780zm2634-1128h570v-268h-775c-282 0-612 291-609 612 2 281 167 594 550 655 100 16 171 29 265 65 113 44 179 160 171 262-9 118-95 234-273 234h-649v313h837c297 0 609-273 655-578 31-206-13-493-148-626-180-179-379-181-592-253-86-29-171-120-171-211 0-89 82-205 171-205z"/>
+          </G>
       </Svg>
     </View>
   );

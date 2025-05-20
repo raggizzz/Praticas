@@ -1,6 +1,6 @@
 import { Tabs } from 'expo-router';
 import { StyleSheet, View } from 'react-native';
-import { Chrome as Home, ListTodo, MessageCircle, User } from 'lucide-react-native';
+import { House, ListTodo, MessageCircle, User } from 'lucide-react-native';
 import { colors } from '@/constants/colors';
 import { useAuth } from '@/context/AuthContext';
 
@@ -22,7 +22,7 @@ export default function TabLayout() {
         options={{
           title: 'Início',
           tabBarIcon: ({ color, size }) => (
-            <Home size={size} color={color} />
+            <House size={size} color={color} />
           ),
         }}
       />

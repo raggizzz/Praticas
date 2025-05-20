@@ -260,6 +260,7 @@ const styles = StyleSheet.create({
   },
   susLogo: {
     marginLeft: 10,
+    elevation: 10,
   },
   greeting: {
     fontSize: 24,

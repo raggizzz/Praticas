@@ -1,15 +1,15 @@
 export const colors = {
   primary: {
-    50: '#e6f5f7',
-    100: '#ccebee',
-    200: '#99d7de',
-    300: '#66c2cd',
-    400: '#33aebd',
-    500: '#0099ac', // Main primary color
-    600: '#007a8a',
-    700: '#005c67',
-    800: '#003d45',
-    900: '#001f22',
+    50: '#eaf0fd',
+    100: '#d5e1fb',
+    200: '#b0c7f7',
+    300: '#8aacf3',
+    400: '#6592ef',
+    500: '#497BEA', // Main primary color
+    600: '#3a63bb',
+    700: '#2b4a8c',
+    800: '#1c325d',
+    900: '#0e192f',
   },
   secondary: {
     50: '#e8f4eb',
