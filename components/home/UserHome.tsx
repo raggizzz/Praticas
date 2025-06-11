@@ -223,7 +223,7 @@ export default function UserHome() {
             )}
 
             {/* Lista de Eventos - Coloque a FlatList aqui */} 
-            <Text style={styles.sectionTitle2}>Próximos Encontros</Text> {/* Título opcional para a lista de eventos */} 
+            <Text style={styles.sectionTitle2}>Eventos</Text> {/* Título opcional para a lista de eventos */} 
             <FlatList 
               data={events} 
               renderItem={({ item }) => <EventCard {...item} />} 
